@@ -1,0 +1,293 @@
+{
+    "data": [
+        {
+            "booking": "Chronological Order"
+        },
+        {
+            "booking": "Ranking Order"
+        }
+    ],
+    "timeFormats": [
+        {
+            "days": "Hours"
+        },
+        {
+            "days": "Days"
+        }
+    ],
+    "hoursForOnlineBooking": [
+        {
+            "values": "Brenda"
+        },
+        {
+            "values": "KMB Short Hours"
+        },
+        {
+            "values": "KMB Standard Hours"
+        },
+        {
+            "values": "Lana Hours"
+        },
+        {
+            "values": "OLB"
+        },
+        {
+            "values": "Part Time"
+        },
+        {
+            "values": "Standard"
+        },
+        {
+            "values": "SW"
+        }
+    ],
+    "failedDepositesOfNotifications": [
+        {
+            "values": "--None--"
+        },
+        {
+            "values": "Kymberly Bartlo"
+        },
+        {
+            "values": "Tonya Worker"
+        },
+        {
+            "values": "Stephanie Oltman"
+        },
+        {
+            "values": "Carole Cruz"
+        },
+        {
+            "values": "Cristina Ross"
+        },
+        {
+            "values": "Randy Tyrell"
+        },
+        {
+            "values": "Jennifer Ames"
+        },
+        {
+            "values": "Ava Moran"
+        },
+        {
+            "values": "Brenda West"
+        },
+        {
+            "values": "Samantha Moran"
+        },
+        {
+            "values": "Worker Bee"
+        },
+        {
+            "values": "Miles WorkerPig"
+        },
+        {
+            "values": "Lily Maze"
+        },
+        {
+            "values": "Seen Abla"
+        }
+    ],
+    "resourceNumberAvailabilities": [
+        {
+            "availability": 1
+        },
+        {
+            "availability": 2
+        },
+        {
+            "availability": 3
+        },
+        {
+            "availability": 4
+        },
+        {
+            "availability": 5
+        },
+        {
+            "availability": 6
+        },
+        {
+            "availability": 7
+        },
+        {
+            "availability": 8
+        },
+        {
+            "availability": 9
+        },
+        {
+            "availability": 10
+        },
+        {
+            "availability": 11
+        },
+        {
+            "availability": 12
+        },
+        {
+            "availability": 13
+        },
+        {
+            "availability": 14
+        },
+        {
+            "availability": 15
+        },
+        {
+            "availability": 16
+        },
+        {
+            "availability": 17
+        },
+        {
+            "availability": 18
+        },
+        {
+            "availability": 19
+        },
+        {
+            "availability": 20
+        }
+    ],
+    "compensationmethods": [
+        {
+            "id": 1,
+            "value": "Hourly Wage"
+        },
+        {
+            "id": 2,
+            "value": "Salary"
+        },
+        {
+            "id": 3,
+            "value": "Hours Worked"
+        },
+        {
+            "id": 4,
+            "value": "Days Worked"
+        },
+        {
+            "id": 5,
+            "value": "Services Performed"
+        },
+        {
+            "id": 6,
+            "value": "Products Sold"
+        },
+        {
+            "id": 7,
+            "value": "Classes Performed"
+        },
+        {
+            "id": 8,
+            "value": "Tickets"
+        },
+        {
+            "id": 9,
+            "value": "Gross Service"
+        },
+        {
+            "id": 10,
+            "value": "Gross Retail"
+        },
+        {
+            "id": 11,
+            "value": "Class Sales"
+        },
+        {
+            "id": 12,
+            "value": "Cost of Service Fee"
+        },
+        {
+            "id": 13,
+            "value": "Numeral"
+        },
+        {
+            "id": 14,
+            "value": "Percent"
+        },
+        {
+            "id": 15,
+            "value": "Result of Step"
+        }
+    ],
+    "actionmethods": [
+        {
+            "id": "Start With",
+            "action": "Start With"
+        },
+        {
+            "id": "Add",
+            "action": "Add"
+        },
+        {
+            "id": "Subtract",
+            "action": "Subtract"
+        },
+        {
+            "id": "Multiply By",
+            "action": "Multiply By"
+        },
+        {
+            "id": "Divide By",
+            "action": "Divide By"
+        },
+        {
+            "id": "If Less Than",
+            "action": "If Less Than"
+        },
+        {
+            "id": "If More Than",
+            "action": "If More Than"
+        }
+    ],
+    "goalsvalue": [
+        {
+            "value": "Gross Service"
+        },
+        {
+            "value": "Gross Retail"
+        },
+        {
+            "value": "Services Performed"
+        },
+        {
+            "value": "Products Sold"
+        },
+        {
+            "value": "Rebooked Appointments"
+        },
+        {
+            "value": "Tickets"
+        },
+        {
+            "value": "Numeral"
+        },
+        {
+            "value": "Percent"
+        },
+        {
+            "value": "Result of Step"
+        }
+    ],
+    "resourceUsedType": [
+        {
+            "type": "None"
+        },
+        {
+            "type": "Any"
+        },
+        {
+            "type": "All"
+        }
+    ],
+    "basis": [
+        {
+            "type": "Zero"
+        },
+        {
+            "type": "step"
+        }
+    ]
+}

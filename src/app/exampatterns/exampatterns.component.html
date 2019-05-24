@@ -1,0 +1,45 @@
+<app-header></app-header>
+
+<body class="drawer drawer--left">
+    <div id="wrapper_setup">
+        <section id="inner_cont" class="setsubcont">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mt-40">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered" *ngFor="let examPtrn of examPtrnList let i='index' last as lastOne"
+                            id="course{{i}}">
+                                <thead>
+                                    <tr>
+                                        <th>{{examPtrn.examName}}</th>
+                                        <th>{{examPtrn.examDuration}}</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Module Name</th>
+                                        <th>From - To</th>
+                                        <th>No. of Question</th>
+                                        <th>+Ve Marks per Question</th>
+                                        <th>-Ve Marks per Question</th>
+                                        <th>Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let examModule of examPtrn.examModule let i='index' last as lastOne"
+                                    id="course{{i}}">
+                                        <td>{{examModule.moduleName}}</td>
+                                        <td>{{examModule.from}} - {{examModule.to}}</td>
+                                        <td>{{examModule.numberOfQuestions}}</td>
+                                        <td>{{examModule.positiveManrksPerQuestion}}</td>
+                                        <td>{{examModule.negitiveManrksPerQuestion}}</td>
+                                        <td>{{examModule.marks}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<app-footer></app-footer>

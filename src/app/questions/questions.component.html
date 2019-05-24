@@ -1,0 +1,88 @@
+<app-header></app-header>
+
+<body class="drawer drawer--left">
+    <div id="wrapper_setup">
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-4 form-group">
+                    <label><span class="text-danger">*</span>{{'COMMON.CLIENT_NAME' | translate}}</label>
+                    <select id="client" class="form-control input-sm" [(ngModel)]="client"
+                        (change)="NewlookupName($event.target.value); clearmessage()" (keypress)="clearmessage()">
+                        <option label="--select something --"></option>
+                        <option *ngFor="let client of clientList" value="{{client._id}}~{{client.clientName}}">{{client.clientName}}</option>
+                    </select>
+                </div>
+                <div class="col-md-4 form-group">
+                    <label><span class="text-danger">*</span>{{'COMMON.SUBJECT_NAME' | translate}}</label>
+                    <select id="subject" class="form-control input-sm" [(ngModel)]="subject"
+                        (change)="NewlookupName($event.target.value); clearmessage()" (keypress)="clearmessage()">
+                        <option label="--select something --"></option>
+                        <option *ngFor="let subject of subjectNames" value="{{subject._id}}~{{subject.lookupName}}">{{subject.lookupName}}</option>
+                    </select>
+                </div>
+                <div class="col-md-4 form-group">
+                    <label><span class="text-danger">*</span>{{'COMMON.COMPLEX_LEVEL' | translate}}</label>
+                    <select id="subject" class="form-control input-sm" [(ngModel)]="complexLevel"
+                        (change)="NewlookupName($event.target.value); clearmessage()" (keypress)="clearmessage()">
+                        <option value="">Select</option>
+                        <option *ngFor="let complexity of complexLevels" value="{{complexity._id}}~{{complexity.lookupName}}">{{complexity.lookupName}}</option>
+                    </select>
+                </div>
+                <div class="col-md-12 form-group">
+                    <label><span class="text-danger">*</span>Question</label>
+                    <textarea id="questionId" name="questionName" [(ngModel)]="question" (keypress)="clearmessage()"
+                        class="form-control input-sm" maxlength="200"></textarea>
+                </div>
+                <div class="col-md-12 form-group">
+                    <label class="custom-control-label" for="defaultGroupExample1"><span
+                            class="text-danger">*</span>Answer: A</label>
+                    <input type="radio" class="custom-control-input" id="rbopA" name="groupOfDefaultRadios"
+                        [(ngModel)]="key" value="A">
+                    <textarea id="questionIda" name="questionNamea" [(ngModel)]="optionA" (keypress)="clearmessage()"
+                        class="form-control input-sm" maxlength="200"></textarea>
+                </div>
+                <div class="col-md-12 form-group">
+                    <label class="custom-control-label" for="defaultGroupExample2"><span
+                            class="text-danger">*</span>Answer: B</label>
+                    <input type="radio" class="custom-control-input" id="rbopB" name="groupOfDefaultRadios"
+                        [(ngModel)]="key" value="B">
+                    <textarea id="questionIdb" name="questionNameb" [(ngModel)]="optionB" (keypress)="clearmessage()"
+                        class="form-control input-sm" maxlength="200"></textarea>
+                </div>
+                <div class="col-md-12 form-group">
+                    <label class="custom-control-label" for="defaultGroupExample3"><span
+                            class="text-danger">*</span>Answer: C</label>
+                    <input type="radio" class="custom-control-input" id="rbopC" name="groupOfDefaultRadios"
+                        [(ngModel)]="key" value="C">
+                    <textarea id="questionIdc" name="questionNamec" [(ngModel)]="optionC" (keypress)="clearmessage()"
+                        class="form-control input-sm" maxlength="200"></textarea>
+                </div>
+                <div class="col-md-12 form-group">
+                    <label class="custom-control-label" for="defaultGroupExample4"><span
+                            class="text-danger">*</span>Answer: D</label>
+                    <input type="radio" class="custom-control-input" id="rbopD" name="groupOfDefaultRadios"
+                        [(ngModel)]="key" value="D">
+                    <textarea id="questionIdd" name="questionNamed" [(ngModel)]="optionD" (keypress)="clearmessage()"
+                        class="form-control input-sm" maxlength="200"></textarea>
+                </div>
+                <div class="col-md-12 form-group">
+                    <label class="custom-control-label" for="defaultGroupExample5"><span
+                            class="text-danger">*</span>Answer: E</label>
+                    <input type="radio" class="custom-control-input" id="rbopE" name="groupOfDefaultRadios"
+                        [(ngModel)]="key" value="E">
+                    <textarea id="questionIde" name="questionNamee" [(ngModel)]="optionE" (keypress)="clearmessage()"
+                        class="form-control input-sm" maxlength="200"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row">
+                <div class="col-md-6 text-right">
+                    <button class="btn btn-primary" (click)="saveQuestion()">{{'BUTTON.SAVE' | translate}}</button>
+                    <button class="btn btn-primary" (click)="hideChildModal()">{{'BUTTON.CANCEL' | translate}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<app-footer></app-footer>

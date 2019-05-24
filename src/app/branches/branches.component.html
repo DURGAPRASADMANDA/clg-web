@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<app-header></app-header>
+<div class="page-padding">
+    <div class="container">
+        <h3 class="title-heading text-center m-t-30">Our Branches</h3>
+        <div class="col-md-4" *ngFor="let branch of branchesData let i='index'" id="branch{{i}}">
+            <div class="addressdiv">
+                <div class="branchTitle">{{branch.branchName}}</div>
+                <div class="branchAddress">
+                    {{branch.address.addressLine1}}, {{branch.address.addressLine2}},<br>
+                    {{branch.address.city}}, {{branch.address.state}},<br>
+                    {{branch.address.country}} - {{branch.address.ZIP}}.
+                </div>
+                <div class="branchtext branchPhone"> 
+                    <img src="../../assets/images/icons/landline-icon.png">
+                    {{branch.contactDetails.workNumber}}
+                </div>
+                <div class="branchtext branchMobile"> <img
+                        src="../../assets/images/icons/mobilephone-icon.png">{{branch.contactDetails.mobile}}</div>
+                <div class="branchtext branchEmail"> <img src="../../assets/images/icons/email-icon.png"> <a
+                        href="#">{{branch.contactDetails.email}}</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,30 @@
+{
+  "TITLE": {
+    "DHRUVA": "Dhruva"
+  },
+  "AGE_CAL": {
+    "BIRT_DATE": "Birth Date / Start Date",
+    "ASON_DATE": "As On Date",
+    "CAL": "Calculate Age",
+    "DIFF": "Difference"
+  },
+  "LOOKUPS": {
+    "LOOKUP_TYPE_NAME": "Lookup Type Name",
+    "LOOKUP_NAME": "Lookup Name",
+    "LOOKUPS": "Lookups"
+  },
+  "COMMON": {
+    "CLIENT_NAME": "Client Name",
+    "SUBJECT_NAME": "Subject Name",
+    "COMPLEX_LEVEL": "Complex Level",
+    "DESCRIPTION": "Description",
+    "ENABLE": "Enable"
+  },
+  "BUTTON": {
+    "SAVE": "Save",
+    "CANCEL": "Cancel"
+  },
+  "TOSTER_MSG": {
+    "ADD": "added successfully."
+  }
+}

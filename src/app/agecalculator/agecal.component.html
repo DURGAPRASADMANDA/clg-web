@@ -1,0 +1,53 @@
+<app-header></app-header>
+<div class="container">
+    <div style="text-align:center">
+        <h1>
+            Calculate your age
+        </h1>
+        <div class="col-md-12 age">
+            <!-- <center> -->
+            <table align="center" width="70%" style="font-size:16px">
+                <tbody>
+                    <tr>
+                        <td colspan="4">
+                            <h2>Birth Date / Start Date</h2>
+                        </td>
+                        <td colspan="4">
+                            <h2>As On Date</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <div class="example-wrapper">
+                                <input placeholder="Birth Date / Start Date" [(ngModel)]="bDateTime"
+                                    [owlDateTimeTrigger]="birthDate" [owlDateTime]="birthDate">
+                                <owl-date-time #birthDate></owl-date-time>
+                            </div>
+                        </td>
+                        <td colspan="4">
+                            <div class="example-wrapper">
+                                <input placeholder="As On Date" [(ngModel)]="asOnDateTime"
+                                    [owlDateTimeTrigger]="asOnDate" [owlDateTime]="asOnDate">
+                                <owl-date-time #asOnDate></owl-date-time>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="8" align="center">
+                            <br>
+                            <button type="button" class="btn btn-success" (click)="calculate()">Calculate Age /
+                                Difference</button>
+                            <!-- <input type="button" value="Calculate Age / Difference" name="calculate" class="btn-grn" id="calculate" onclick="calculate()"> -->
+                            <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <h4>Result: {{age}}</h4>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- </center> -->
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

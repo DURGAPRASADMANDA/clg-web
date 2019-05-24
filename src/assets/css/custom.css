@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700,900');
+
+body {
+  color: #383838;
+  background: #ffffff;
+  font-size: 15px; 
+  line-height: 1.8em;
+  letter-spacing: 0.3px; 
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+.row{
+  margin: 0px;
+}
+
+.pad-0{
+  padding: 0px;
+}
+
+.m-t-30{
+  margin-bottom: 30px;
+}
+
+hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.top-header{
+  /* background-color: #f8f8f8;*/
+  background: #f3f3f3;
+  border-color: #e7e7e7;
+}
+
+.top-header ul {
+  overflow: hidden;
+  float: left;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.top-header ul li a {
+  color: #fff;
+  padding: 5px 14px;
+  line-height: 30px; 
+  font-size: 12px;
+}
+
+.top-header ul li {
+  float: left;
+  display: inline-block;
+}
+
+.top-contact ul li a{
+  color: #000;
+}
+
+.top-social ul li a {
+  padding: 5px 10px;
+  font-size: 11px;
+}
+
+.top-social ul li a i {
+  width: 10px;
+}
+
+.top-social li:nth-child(1){
+  background: #4867AA;
+}
+
+.top-social li:nth-child(2){
+  background: #D54B3D;
+}
+
+.top-social li:nth-child(3){
+  background: #1DA1F2
+}
+
+.top-signin{
+  float: right;
+}
+
+.top-social {
+  float: right;
+  margin-right: 100px;
+}
+
+.top-signin ul li:nth-child(1) {
+  background: #e66030;
+}
+
+.top-signin ul  li:nth-child(2){
+  background: #013673;
+}
+
+.main-header {
+  padding: 15px 0px;
+  background-color: transparent;
+  border-color: #e7e7e7;
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: transparent;
+}
+
+.main-header .navbar-nav > li > a {
+  padding: 15px 12px; 
+  font-size: 15px;
+}
+
+.logo > img {
+  display: block;
+  height: 40px;
+  margin-top: 5px;
+}
+
+/*================ Footer CSS================*/
+
+.copy-rights {
+    margin-top: 10px;
+    border-top: 1px solid #efefef;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 13px;
+    background: #f3f3f3;
+  border-color: #e7e7e7;
+}
+
+.copy-rights p {
+    margin-bottom: 0px;
+    color: #000;
+    font-size: 13px;
+}
+
+/*================ Index CSS ===============*/
+
+.title-heading{
+  margin-top: 0px;
+  font-family: Rubik;
+  font-size: 26px
+}
+
+.page-padding{
+  padding:30px;
+}
+
+.carousel-inner > .item > img, 
+.carousel-inner > .item > a > img {
+  line-height: 1;
+  height: 400px;
+  width: 100%;
+}
+
+.slider-arr {
+  color: #fff;
+  position: absolute;
+  font-size: 18px;
+  top: 43%;
+  width: 50px;
+  height: 50px;
+  background: #000000;
+  padding: 17px;
+  border-radius: 50px;
+}
+
+.slider-con h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+.slider-con p {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.slider-con a {
+  /* color: #fff; */
+  padding: 14px 45px;
+  line-height: 45px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  height: 45px;
+  text-align: center;
+  margin: 0px 10px;
+}
+
+.bann-btn-1 {
+  background: #f36b3b;
+  background: -webkit-linear-gradient(to top, #ef612f, #f36b3b);
+  background: linear-gradient(to top, #ef612f, #f36b3b);
+  color: #fff;
+  border: 1px solid #f36b3b;
+}
+
+.bann-btn-2 {
+  border: 1px solid #e0e0e0;
+  color: #e0e0e0;
+}
+
+.flash-news-div {
+  overflow: hidden;
+  font-size: 12px ;
+  color: #6d6e70;
+  border: 2px solid #e4e5e5;
+  padding: 0px 0 !important;
+  line-height: 50px;
+  height: 50px;
+  -webkit-text-size-adjust: none;
+  box-shadow: 0 0 10px #999;
+  -moz-box-shadow: 0 0 10px #999;
+  -webkit-box-shadow: 0 0 10px #999;
+  margin: 40px 0px;
+}
+
+.flash-news-heading {
+  float: left;
+  background:#f06433;
+  color: #fff;
+  height: 50px; 
+}
+
+.flash-news-heading h2 {
+  margin: 0px; 
+  font-size: 20px;
+  padding: 12px;
+}
+
+.flash-news {
+  float: left;
+  height: 46px;
+  width: 83%;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.para-div h2 {
+    margin-top: 0px;
+    font-family: Rubik;
+    font-size: 26px;
+}
+
+.para-text {
+  margin:0px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 29px;
+  text-align: justify;
+}
+
+.scroll-div {
+  width: 100%;
+  height: 300px;
+  overflow: hidden; 
+  padding: 0px 10px;
+}
+
+.scroll-div .mask {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height:300px;
+  overflow: hidden;
+}
+
+.scroll-div ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  position: relative;
+}
+
+.event-small-list {
+  padding: 15px 0px;
+  border-bottom: 1px dashed;
+  border-color: #d5dbe0 !important;
+}
+
+.event-small-details {
+  overflow: hidden;
+}
+
+.event-small-p{
+  margin-bottom: 0px;
+}
+
+.calendar-small {
+  float: left;
+  display: block;
+  margin-right: 15px;
+  width: 65px;
+  height: 70px;
+  background-color: #f3f3f3;
+}
+
+.calendar-small .s-month {
+  display: block;
+  width: 65px;
+  height: 20px;
+  line-height: 19px;
+  text-align: center;
+  background-color: #f1663594;
+  color: #fff;
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.calendar-small .s-date {
+  font-size: 16px;
+  font-weight: 500;
+  width: 65px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+  color: #282a2c;
+}
+
+.calendar-small  .s-year {
+  display: block;
+  width: 65px;
+  height: 20px;
+  line-height: 19px; 
+  text-align: center;
+  background-color: #f1663594;
+  color: #fff;
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.event-small-title {
+  margin-top: 5px;
+}
+
+.event-small-title a {
+  color: #013673;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.latest-div-news .panel-heading,
+.latest-notify-news .panel-heading,
+.latest-results-news .panel-heading {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.latest-notify-news .calendar-small .s-month,
+.latest-notify-news .calendar-small .s-year{
+  background-color: #0136738f;
+}
+
+.latest-results-news .calendar-small .s-month, 
+.latest-results-news .calendar-small .s-year {
+  background-color: #2a8c328f;
+}
+
+.request-info-div{
+  border: 1px solid #ccc;
+}
+
+.request-information {
+  padding: 0px;
+}
+
+.request-information form{
+  padding: 15px;
+}
+
+.request-information .full-row{
+  margin-bottom: 10px;
+}
+
+.request-information .form-control {
+  height: 30px;
+  border-radius: 0px;
+  padding: 2px 10px;
+}
+
+.request-information label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+}
+
+h4.widget-title {
+    background: #013673;
+    color: #fff;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.submit_field .btn-primary {
+  color: #fff;
+  background-color: #013673;
+  border-color: #013673;
+  border-radius: 0px;
+  margin-top: 15px;
+}
+
+.latest-div .panel-default > .panel-heading {
+    color: #000;
+    background-color: #ffffff;
+    border-color: #ddd;
+    font-size: 18px !important;
+    font-family: Rubik;
+    font-weight: 500;
+}
+
+.our-success {
+    padding: 30px 0px;
+}
+
+.our-success img{
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  padding-bottom: 5px;
+}
+
+.our-success h4 {
+  margin-top: 5px;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.our-success p{
+  text-align: center;
+  font-style: italic;
+  font-size: 14px;
+}
+
+/*============== Our Branches ===============*/
+
+.addressdiv {
+    padding: 15px;
+    height: 280px;
+    background-color: #efefef;
+    border: 1px solid #e2e2e2;
+    margin-bottom: 30px;
+}
+
+.branchTitle {
+    color: #013673;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.branchAddress {
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 10px;
+}
+
+.addressdiv img {
+    height: 20px;
+    padding: 2px; 
+}
+
+.branchtext.branchPhone {
+    margin-top: 12px;
+}
+
+.branchtext {
+    line-height: 33px;
+}
+
+.branchEmail a{
+  color: #000;
+}
+
+
+/*=============== Contact Us Page =================*/
+
+
+.contact-form .section-heading {
+    text-align: left;
+    margin-bottom: -5px; 
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.contact-form p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.contact-form input.form-control {
+    height: 40px;
+    border-radius: 0px;
+}
+
+.contact-form .form-group {
+    margin-top: 18px;
+}
+
+.contact-form  .btn-custom.btn-block {
+    background: #013673;
+    color: #fff;
+    height: 40px;
+    border-radius: 0px;
+    font-size: 16px;
+}
+
+.contact-address{
+  padding-top: 85px;
+}
+
+.contact-address h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contact-address .icon-box h5 {
+    margin-top: 10px;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.contact-address img{
+  height: 19px;
+}
+
+.get-touch{
+
+}
+.age{
+    padding: 30px; 
+    border: 1px #ccc solid; 
+    border-radius: 5px; 
+    background: #fcf7f7!important
+}

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dhruva</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/icons.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="assets/owl-carousel/owl.theme.css">
+  <!-- ttttttt -->
+  <!-- <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext'
+    type='text/css'> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+  </head>
+
+<body>
+  <app-root></app-root>
+</body>
+
+</html>
+<script type="text/javascript" src="assets/js/swiper.min.js"></script>
+<script type="text/javascript" src="assets/js/responsee.js"></script>
+<script type="text/javascript" src="assets/owl-carousel/owl.carousel.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<script>
+  const mySwiper = new Swiper('.category-slider', {
+    autoplay: {
+      delay: 1000,
+    },
+    slidesPerView: '6',
+    freeMode: true,
+    loop: true,
+    a11y: true,
+    keyboardControl: true,
+    grabCursor: true,
+
+
+    // pagination
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+
+    // navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+</script>
+
+
+<script type="text/javascript">
+  jQuery.fn.liScroll = function (settings) {
+    settings = jQuery.extend({
+      travelocity: 0.03
+    }, settings);
+    return this.each(function () {
+      var $strip = jQuery(this);
+      $strip.addClass("newsticker")
+      var stripHeight = 1;
+      $strip.find("li").each(function (i) {
+        stripHeight += jQuery(this, i).outerHeight(true); // thanks to Michael Haszprunar and Fabien Volpi
+      });
+      var $mask = $strip.wrap("<div class='mask'></div>");
+      var $tickercontainer = $strip.parent().wrap("<div class='tickercontainer'></div>");
+      var containerHeight = $strip.parent().parent().height();  //a.k.a. 'mask' width   
+      $strip.height(stripHeight);
+      var totalTravel = stripHeight;
+      var defTiming = totalTravel / settings.travelocity; // thanks to Scott Waye   
+      function scrollnews(spazio, tempo) {
+        $strip.animate({ top: '-=' + spazio }, tempo, "linear", function () { $strip.css("top", containerHeight); scrollnews(totalTravel, defTiming); });
+      }
+      scrollnews(totalTravel, defTiming);
+      $strip.hover(function () {
+        jQuery(this).stop();
+      },
+        function () {
+          var offset = jQuery(this).offset();
+          var residualSpace = offset.top + stripHeight;
+          var residualTime = residualSpace / settings.travelocity;
+          scrollnews(residualSpace, residualTime);
+        });
+    });
+  };
+
+  $(function () {
+    // $("ul#ticker01").liScroll();
+  });
+</script>

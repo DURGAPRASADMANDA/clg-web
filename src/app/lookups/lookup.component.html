@@ -1,0 +1,52 @@
+<app-header></app-header>
+
+<body class="drawer drawer--left">
+    <div id="wrapper_setup">
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-4 form-group">
+                    <label><span class="text-danger">*</span>Client Name</label>
+                    <select id="client" class="form-control input-sm" [(ngModel)]="client"
+                        (change)="NewlookupName($event.target.value); clearmessage()" (keypress)="clearmessage()">
+                        <option value="0">Select</option>
+                        <option *ngFor="let client of clientList" value="{{client._id}}~{{client.clientName}}">
+                            {{client.clientName}}</option>
+                    </select>
+                </div>
+                <div class="col-md-4 form-group">
+                    <label><span class="text-danger">*</span>{{'LOOKUPS.LOOKUP_TYPE_NAME' | translate}}</label>
+                    <input type="text" class="form-control input-sm text-capitalize" [(ngModel)]="lTypeName"
+                        id="username" name="username" value="" (keypress)="clearmessage()"
+                        placeholder="Enter New Lookup Type">
+                </div>
+                <div class="col-md-4 form-group">
+                    <label><span class="text-danger">*</span>{{'LOOKUPS.LOOKUP_NAME' | translate}}</label>
+                    <input type="text" class="form-control input-sm text-capitalize" [(ngModel)]="lName" id="username"
+                        name="username" value="" (keypress)="clearmessage()" placeholder="Enter New Lookup Name">
+                </div>
+                <div class="col-md-4 form-group">
+                    <label>{{'COMMON.ENABLE' | translate}}</label>
+                    <label class="checkbox-inline" for="inline-checkbox1">
+                        <input id="inline-checkbox1" class="regular-checkbox big-checkbox" [(ngModel)]="checkBoxValue"
+                            (change)="clearmessage()" name="inline-checkbox1" type="checkbox">
+                        <label for="inline-checkbox1"></label>
+                    </label>
+                </div>
+                <div class="col-md-12 form-group">
+                    <label><span class="text-danger">*</span>{{'COMMON.DESCRIPTION' | translate}}</label>
+                    <textarea id="lookupDesId" name="lookupDesName" [(ngModel)]="lookupDes" (keypress)="clearmessage()"
+                        class="form-control input-sm" maxlength="200" placeholder="Lookup Description"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row">
+                <div class="col-md-6 text-right">
+                    <button class="btn btn-primary" (click)="saveLookup()">Save</button>
+                    <button class="btn btn-primary" (click)="hideChildModal()">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<app-footer></app-footer>
